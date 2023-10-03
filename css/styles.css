@@ -3,26 +3,31 @@ header, footer {
     color: #FFF;
 }
 
-h1 {
-    font-family: Tahoma, Verdana, sans-serif;
+.logo-image {
+    background-image: url(../images/GameHub_Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 7vh;
 }
 
-h3 {
+h1,h3 {
     font-family: Tahoma, Verdana, sans-serif;
 }
 
 p {
-    font-family: Palatino, Verdana, sans-serif ;
+    font-family: Palatino, Verdana, sans-serif;
 }
 
 nav a {
     color: #FFF;
     text-decoration: none;
-    padding: 10px;
+    padding: 15px;
 }
 
 nav li {
     display: inline-block;
+    padding: 10px 10px 0px;
 }
 
 nav a:hover {
@@ -30,7 +35,9 @@ nav a:hover {
 }
 
 header {
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: left;
 }
 
 .gameimage {
@@ -38,6 +45,27 @@ header {
     
 }
 
-img {
-    max-width: 100%;
+
+/* Home Page */
+
+#first_section {
+    background-image: url(../images/motorcross-small.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: left;
+    background-position-y: bottom;
+    min-height: 70vh;
 }
+
+#first_section_text {
+    color: #FFF;
+    font-size: large;
+    font-family: Palatino, Verdana, sans-serif;
+    text-align: left;
+    padding-top: 400px;
+}
+
+/* Games Page */
+/* Game Page */
+/* Contact Page */
+/* About Page */
