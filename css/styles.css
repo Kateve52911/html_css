@@ -49,12 +49,14 @@ header {
 /* Home Page */
 
 #first_section {
-    background-image: url(../images/motorcross-small.jpg);
+    background-image: url(../images/motocross-big.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: left;
-    background-position-y: bottom;
+    background-size: cover;
+    background-position-x: bottom;
+    background-position-y: top;
     min-height: 70vh;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #first_section_text {
