@@ -7,24 +7,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
         <title> Gamehub | Home </title>
+        <script src="https://kit.fontawesome.com/f6ecbff17b.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <header>
             <section class="logo-image">
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
                 </nav>
+            </section>
+            <section class="signup">
+                <nav><a href="contact-html">Log in / sign up</a></nav>
             </section>
         </header>
 
         <main>
-            <p>The internet's leading site for new and pre-used games! </p>
+            <p id="top-text"> <i>The internet's leading site for new and pre-used games!</i></p>
         
+            
             <section id="first_section">
                 <section id="first_section_text">
                     <p>Looking for an action filled racing game?</p>
@@ -33,16 +39,48 @@
                 </section>
             </section>
 
-            <p>New Releases:</p>
-
-            <section>
-                <h3>Racing!</h3>
-                <p><img src="images/GameHub_covers7.jpg" alt="Racing!" class="gameimage"></p>
-                <a href="checkout.html">Add to cart</a> 
+            <section class="container-flex-h2">
+                <h2 class="h2-item one"> Our most popular second-hand games:</h2>
+                <h2 class="h2-item two"> New releases:</h2>
             </section>
+            
+            <section class="container-homepage-1">
+                <section class="item-homepage"  class="furious">
+                    <h3 >Furious!</h3>
+                    <img src="images/GameHub_furious.jpg" alt="Furious!" class="gameimage">
+                    <p>Looking for a game that will blow your mind? Look no further! Furious is the game for you!</p>
+                    <a href="checkout.html" class="cta-read-more">Read more</a> 
+                </section>
 
-            <p>Our most popular games:</p>
+                <section class="item-homepage" class="cyperpunk">
+                    <h3 >Racing!</h3>
+                    <img src="images/GameHub_cyperpunk.jpg" alt="Cyberpunk!" class="gameimage">
+                    <p>Be the bosslady of your own world in the new game Cuberpunk!</p>
+                    <a href="checkout.html" class="cta-read-more">Read more</a> 
+                </section> 
+
+            </section>
+        
+
+
+            <section class="container-homepage-1">
+                <section class="item-homepage"  class="furious">
+                    <h3 >Furious!</h3>
+                    <img src="images/GameHub_furious.jpg" alt="Furious!" class="gameimage">
+                    <p>Looking for a game that will blow your mind? Look no further! Furious is the game for you!</p>
+                    <a href="checkout.html" class="cta-read-more">Read more</a> 
+                </section>
+
+                <section class="item-homepage" class="cyperpunk">
+                    <h3 >Racing!</h3>
+                    <img src="images/GameHub_cyperpunk.jpg" alt="Cyberpunk!" class="gameimage">
+                    <p>Be the bosslady of your own world in the new game Cuberpunk!</p>
+                    <a href="checkout.html" class="cta-read-more">Read more</a> 
+                </section> 
+
+            </section>
         </main>
+        
         <footer>
             <p>Address</p>
             <p>Email</p>
@@ -56,5 +94,6 @@
             </nav>
             <p>Sign up: </p>
         </footer>
+
     </body>
     </html>
