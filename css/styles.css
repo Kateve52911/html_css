@@ -1,5 +1,5 @@
 
-
+/* Header & Footer */
 
 header, footer {
     background-color: #0867A3;
@@ -14,7 +14,6 @@ header {
     color:#FFF
 }
 
-
 .logo-image {
     background-image: url(../images/GameHub_Logo.png);
     background-repeat: no-repeat;
@@ -23,19 +22,48 @@ header {
     min-height: 7vh;
 }
 
-h1, h2, h3 {
+
+.info_footer {
+    display: inline-grid;
+}
+
+.text_footer {
+    margin: 3%;
+}
+
+.newsletter {
+    font-size: small;
+    font-family: Palatino, Verdana, sans-serif;  
+    padding-left: 35%;
+    padding: 1% 1% 1% 35%;
+}
+
+.contact_info_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0%;
+    padding: 1%;
+}
+
+
+/* Fonts */
+
+h1, h2 {
     font-family: Tahoma, Verdana, sans-serif;
     padding-left: 30px;
+}
+
+h3 {
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 p {
     font-family: Palatino, Verdana, sans-serif;
 }
 
-.signup {
-    float: right;
-    display: inline;
-}
+
+/* Nav */
 
 nav, #menu-checkbox {
     display: none;
@@ -46,9 +74,12 @@ nav, #menu-checkbox {
 }
 
 nav {
-    position: absolute;
     background: #0867A3;
-    margin-right: 70%;
+    /* position: absolute; */
+}
+
+.header_links {
+    float: left;
 }
 
 
@@ -71,15 +102,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.gameimage {
-    max-width: 20%
-    
-}    
-
-#top-text {
-    padding-left: 5%;
+.signup {
+    float: right;
 }
-
+ 
 
 /* Buttons */
 
@@ -98,6 +124,17 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
 }
+
+.cta-input-footer {
+    background-color: #3CAAF0;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+}
+
+
 
 /* Home Page */
 
@@ -119,13 +156,32 @@ nav a:hover {
     padding-top: 400px;
 }
 
-.container-homepage-1, .container-homepage-2 {
-    display: flex;
-    justify-content: right;
-    margin: 5%;
-    align-items: stretch;
-    gap: 10px;
+/*.container-homepage > * {
+    flex: 1;
 }
+*/
+
+.container-homepage {
+    display: inline-grid;
+    text-align: left;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 5%;
+    gap: 5%;
+}
+
+
+.game-text {
+    padding: 5px 25px 15px 0px;
+}
+
+.gameimage {
+    max-width: 20%;
+    float:left ;
+    margin: 2%;
+    
+}   
 
 .container-flex-h2 {
     display: flex;
@@ -137,7 +193,14 @@ nav a:hover {
     padding: 0%;
 }
 
+#top-text {
+    padding-left: 5%;
+}
+
+
+
 /* Games Page */
+
 #top-section-games-page{
     background-image: url(../images/bluecar.jpg);
     background-repeat: no-repeat;
@@ -149,7 +212,43 @@ nav a:hover {
     margin-right: 5%;
 }
 
+
+.container_games_page {
+    display: inline-block;
+}
+
+.row1, .row2 {
+    display: flex;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+.image_gamepage {
+    max-width: 20%;
+    display: flex inline;
+}
+
+.cta_gamespage{
+    background-color: #F0A53C;
+    color: #FFF;
+    padding: 10px;
+    max-width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
 /* Game Page */
+
+
 
 /* Contact Page */
 
@@ -167,12 +266,14 @@ input {
     margin-left: 30px;
     font-size: larger;
     font-family: Palatino, Verdana, sans-serif;
+    margin-bottom: 4%;
 }
 
 label {
     margin-left: 30px;
     font-size: larger;
     font-family: Palatino, Verdana, sans-serif;
+    
 }
 
 textarea {
@@ -189,10 +290,28 @@ textarea {
 
 #contact-form {
     background-color: #EBF7FD;
-    margin-right: 65%;
+    margin-right: 20%;
     margin-left: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
+}
+
+#log-in-form {
+    margin-right: 5%;
+    margin-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.form_contactpage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    margin: 5%;
+}
+
+#contact-info {
+    margin-left: 7%;
 }
 
 .cta-login {
@@ -213,7 +332,11 @@ textarea {
     text-decoration: none;
 }
 
+
+
 /* Checkout Page */
+
+
 
 /* About Page */
 #first-section-about-page {
@@ -235,9 +358,8 @@ textarea {
     float: right;
 }
 
-/* About Page */
 
-/* Medie Queries */
+/* Media Queries */
 
 @media (min-width: 600px) {
     nav {
