@@ -455,7 +455,7 @@ textarea {
 
 /* Media Queries */
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     nav {
         display: block;
         position: static;
@@ -470,7 +470,7 @@ textarea {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
