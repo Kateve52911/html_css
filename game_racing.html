@@ -38,19 +38,39 @@
                     <section>
                         <fieldset>
                             <label for="digital" class="label_gamepage">Digital copy:</label>
+                            <label for="price" class="price_gamepage_one">$49.99</label>
                             <input type="radio" class="form_input one">
                         </fieldset>
 
                         <fieldset>
                             <label for="Physical" class="label_gamepage">Physical copy:</label>
+                            <label for="price" class="price_gamepage">$49.99</label>
                             <input type="radio" class="form_input two">
                         </fieldset>
                     </section>
+
                     <section>
                         <a href="checkout.html" class="cta_gamespage">Add to cart</a> 
                         <a href="favourite.html" class="cta_heart"><i class="fa-regular fa-heart" style="color: #fffdfc;"></i></a>
                     </section>
 
+                    <section class="delivery_info">
+                        <div>
+                            <p class="deliverytruck"><i class="fa-solid fa-truck fa-2xl" style="color: #000;"></i></p>
+                        </div>
+                        <div>
+                            <p>Free shipping over $50</p>
+                            <p>Estimated delivery 1-2 days</p>
+                        </div>
+                    </section>
+
+
+                    <section class="game_info">
+                        <h3>Racing:</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aliquid. Tenetur iste at ab magnam ea enim doloribus quaerat iure a ut dolorum accusantium, tempore maxime error mollitia tempora hic.
+                        </p>
+                    </section>
 
                 </section>
 
@@ -60,18 +80,44 @@
                 
         </main>
         <footer>
-            <p>Address</p>
-            <p>Email</p>
-            <p>Phone</p>
-            <nav>
-                <ul>
-                    <li><a href="">Youtube</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Instagram</a></li>
-                </ul>
-            </nav>
-            <p>Sign up: </p>
+            <section class="contact_info_footer">
+                <Section>
+                    <Section class="info_footer">
+                        <p class="text_footer">Address:</p>
+                        <p class="text_footer">1234 Street,Town</p>
+                        <p class="text_footer">State, 09765, Country</p>
+                    </Section>
+                    <Section class="info_footer">
+                        <p class="text_footer">Email:</p>
+                        <p class="text_footer">post@gamehub.com</p>
+                    </Section>
+                    <Section class="info_footer">
+                        <p class="text_footer">Phone:</p>
+                        <p class="text_footer">09645725</p>
+                    </Section>
+                </Section>
+
+                <section class="social_media">
+                    <nav>
+                        <ul>
+                            <li><a href="contact.html"><i class="fa-solid fa-video" style="color: #fff;"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="newsletter">
+                    <form action="POST">
+                        <label for="newsletter">Sign up for our newsletter</label>
+                        <input type="email" name="newsletter" id="newsletter" placeholder="Enter email">
+                        <input type="submit" value="submit" class="cta-input-footer">
+                    </form>
+                </section>
+
+            </section>
         </footer>
+    </body>
     
     </body>
 </html>

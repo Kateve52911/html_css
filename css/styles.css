@@ -22,6 +22,14 @@ header {
     min-height: 7vh;
 }
 
+.contact_info_footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 3% 7%;
+    justify-items: center;
+}
+
 
 .info_footer {
     display: inline-grid;
@@ -29,6 +37,8 @@ header {
 
 .text_footer {
     margin: 3%;
+    padding-right: 8%;
+    font-size: small;
 }
 
 .newsletter {
@@ -37,16 +47,9 @@ header {
     padding-left: 35%;
     padding: 1% 1% 1% 35%;
     text-decoration: none;
-    
+    font-size: small;
 }
 
-.contact_info_footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 0%;
-    padding: 1%;
-}
 
 
 /* Fonts */
@@ -106,7 +109,7 @@ nav a:hover {
 .signup {
     float: right;
 }
- 
+
 
 /* Buttons */
 
@@ -141,6 +144,27 @@ nav a:hover {
     border-style: none;
     border-radius: 5px;
 }
+
+.cta_heart_gamespage {
+    background-color: #3CAAF0;
+    padding: 10px;
+    border-style: none;
+    border-radius: 5px;
+    max-width: 20px;
+    margin: 3%;
+    float: right;
+}
+
+.cta_gamespage{
+    background-color: #F0A53C;
+    color: #FFF;
+    padding: 10px;
+    max-width: 80px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
 
 
 /* Home Page */
@@ -219,36 +243,45 @@ nav a:hover {
     margin-right: 5%;
 }
 
-
-.container_games_page {
-    display: inline-block;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 5%;
+    padding: 5%;
 }
 
-.row1, .row2 {
+.container_games_page {
     display: flex;
+    flex-direction: column;
+    
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    padding-bottom: 5%;
 }
 
 .game {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .image_gamepage {
-    max-width: 20%;
-    display: flex inline;
+    max-width: 50%;
+    padding: 0%;
+    /*display: flex inline;*/
 }
 
-.cta_gamespage{
-    background-color: #F0A53C;
-    color: #FFF;
-    padding: 10px;
-    max-width: 100px;
-    border-radius: 5px;
+.sidebar_gamespage {
     text-decoration: none;
-    display: inline-block;
+    background-color: #FFF;
+    color: #000;
 }
 
 
@@ -274,19 +307,41 @@ nav a:hover {
     display: inline;
     background-color: #FFF;
 }
-
 .label_gamepage {
     margin: 3%;
+    padding: 0%;
+}
+
+.price_gamepage {
+    margin-left: 30%;
+}
+
+.price_gamepage_one{
+    margin-left: 33%;
+}
+
+.game_info {
+    margin-top: 25%;
 }
 
 fieldset {
     margin: 4% 0%;
-    max-width: 70%;
+    max-width: 80%;
+    padding-top: 4%;
+    border-style: outset;
 }
 
-input[type="radio"] {
-    margin-left: 50%;
+.delivery_info {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    grid-template-rows: 50px;
+    margin: 5% 0%
 }
+
+.deliverytruck {
+    margin-top: 60%;
+}
+
 
 
 /* Contact Page */
@@ -412,5 +467,13 @@ textarea {
 
     nav a {
         display: inline-block;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
