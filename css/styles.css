@@ -498,13 +498,14 @@ textarea {
         display: inline-grid;
         grid-template-columns: 1fr;
         grid-template-rows: 350px 350px 350px;
-        margin: 5% 15%;
+        margin: 5% 5%;
     }
 
     fieldset {
         margin: 4% 0%;
         max-width: 80%;
-        padding-top: 4%;
+        padding-top: 5%;
+        padding-bottom: 2%;
         border-style: outset;
     }
 
