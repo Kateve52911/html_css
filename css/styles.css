@@ -457,7 +457,7 @@ textarea {
 
 /* Phone */
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     nav {
         display: block;
         position: static;
@@ -470,7 +470,9 @@ textarea {
     nav a {
         display: inline-block;
     }
+}
 
+@media (max-width: 800px) {
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -482,10 +484,18 @@ textarea {
         display: flex;
         flex-direction: column;
     }
+
+    .newsletter {
+        font-size: x-small;
+        font-family: Palatino, Verdana, sans-serif;  
+        padding: 1% 1% 1% 35%;
+        text-decoration: none;
+        font-size: x-small;
+    }
     
 }
 
 /* Tablet */ 
 @media (min-width: 801px) and (max-width: 1000px) {
-
+    
 }
