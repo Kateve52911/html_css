@@ -515,13 +515,21 @@ textarea {
     }
     
     .price_gamepage {
-        margin-left: 20%;
+        margin-left: 15%;
         font-size: medium;
     }
     
     .price_gamepage_one{
-        margin-left: 23%;
+        margin-left: 18%;
         font-size: medium;
+    }
+
+    .info_gamepage {
+        margin-top: 3%;
+    }
+
+    .gameimage_gamepage {
+        max-width: 80%;
     }
 
 }
