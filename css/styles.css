@@ -455,7 +455,9 @@ textarea {
 
 /* Media Queries */
 
-@media (min-width: 800px) {
+/* Phone */
+
+@media (max-width: 800px) {
     nav {
         display: block;
         position: static;
@@ -468,16 +470,22 @@ textarea {
     nav a {
         display: inline-block;
     }
-}
 
-@media (max-width: 800px) {
     .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 5%;
         padding: 5%;
     }
 
+    .form_contactpage {
+        display: flex;
+        flex-direction: column;
+    }
     
+}
+
+/* Tablet */ 
+@media (min-width: 801px) and (max-width: 1000px) {
+
 }
