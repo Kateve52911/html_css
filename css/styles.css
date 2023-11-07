@@ -174,7 +174,7 @@ nav a:hover {
 
 /* Home Page */
 
-#first_section {
+#first_section_homepage {
     background-image: url(../images/motocross-big.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -492,7 +492,7 @@ textarea {
         background-size: cover;
         background-position-x: bottom;
         background-position-y: top;
-        min-height: 70vh;
+        min-height: 20vh;
         margin-left: 5%;
         margin-right: 5%;
     }
