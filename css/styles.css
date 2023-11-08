@@ -613,13 +613,36 @@ hr.solid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         align-content: end;
-        padding: 5%;
+        padding: 5%, 2%;
     }
 
     #log-in-form, #contact-form {
         margin: 5%;
     }
+    #contact-form {
+        max-width: 400px;
+    }
 
+    input {
+        display: block;
+        margin-left: 10px;
+        font-size: small;
+        font-family: Palatino, Verdana, sans-serif;
+        margin-bottom: 4%;
+    }
+    
+    label {
+        margin-left: 10;
+        font-size: small;
+        font-family: Palatino, Verdana, sans-serif;
+    }
+    
+    textarea {
+        display: block;
+        margin-left: 10px;
+        font-size: small;
+        font-family: Palatino, Verdana, sans-serif;
+    }
 
     /* Racing */
     .container_gamepage {
