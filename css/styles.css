@@ -24,31 +24,29 @@ header {
 
 .contact_info_footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(3, 1fr);
     grid-template-rows: 1fr;
-    padding: 3% 7%;
-    justify-items: center;
-}
-
-
-.info_footer {
-    display: inline-grid;
+    margin: 3% 5%;
+    padding: 5% 2%;
 }
 
 .text_footer, .info_footer  {
     display: inline-grid;
     margin: 3%;
-    padding-right: 8%;
     font-size: small;
+    
 }
 
 .newsletter {
     font-size: small;
     font-family: Palatino, Verdana, sans-serif;  
-    padding-left: 35%;
-    padding: 1% 1% 1% 35%;
     text-decoration: none;
     font-size: small;
+}
+
+input.input_newsletter {
+    display: inline;
+    padding: 2% 4%;
 }
 
 .header_page {
@@ -59,11 +57,7 @@ header {
 
 /* Fonts */
 
-h1, h2 {
-    font-family: Tahoma, Verdana, sans-serif;
-}
-
-h3 {
+h1, h2, h3 {
     font-family: Tahoma, Verdana, sans-serif;
 }
 
@@ -169,7 +163,40 @@ nav a:hover {
     display: inline;
 }
 
+.cta_pay {
+    background-color: #F0A53C;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
 
+.cta-login {
+    background-color: #F0A53C;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+}
+
+.cta-input {
+    background-color: #3CAAF0;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+}
+
+.cta-discount {
+    background-color: #F0A53C;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: none;
+    text-decoration: none;
+}
 
 
 /* Home Page */
@@ -331,11 +358,11 @@ nav a:hover {
     margin-top: 25%;
 }
 
-fieldset {
+fieldset.game_page {
     margin: 4% 0%;
     max-width: 80%;
     padding-top: 4%;
-    border-style: outset;
+    border-style: outset ;
 }
 
 
@@ -416,28 +443,84 @@ textarea {
     margin-left: 7%;
 }
 
-.cta-login {
-    background-color: #F0A53C;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: none;
-    text-decoration: none;
-}
-
-.cta-input {
-    background-color: #3CAAF0;
-    color: #FFF;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: none;
-    text-decoration: none;
-}
-
 
 
 /* Checkout Page */
 
+.checkout_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 0%;
+}
+.checkout_forms {
+    padding-left: 5%;
+}
+
+.payment_radio {
+    display: flex;
+    font-size: small;
+    min-width: 100px;
+    padding: 5%;
+}
+
+.checkout_summary{
+    background-color: #EBF7FD;
+    max-width: 500px;
+    min-height: 400px;
+    padding: 10%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.details_checkout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1% 3%;
+}
+
+.gameimage_checkout {
+    max-width: 50%;
+}
+
+input.cardholder {
+    display: block;
+    font-size: large;
+    font-family: Palatino, Verdana, sans-serif;
+    margin-bottom: 2%;
+}
+
+input.discount_input {
+    display: inline;
+    padding: 5px 10px;
+}
+
+
+fieldset.checout_fieldset{
+    padding-left: 5%;
+    font-size: large;
+    font-family: Tahoma, Verdana, sans-serif;
+    max-width: 70%;
+}
+
+hr.solid {
+    border-style: solid;
+    
+}
+
+.container_grid_checkout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0% 10%;
+}
+
+.price_checkout {
+    text-align: end;
+}
+
+.payment_info {
+    padding: 0%;
+}
 
 
 /* About Page */
@@ -517,7 +600,7 @@ textarea {
         background-image: url(../images/bluecarsmall.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-x: right;
+        background-position-x: left;
         background-position-y: bottom;
         min-height: 20vh;
         margin-left: 15%;
@@ -526,8 +609,15 @@ textarea {
 
     /* Contact page */
     .form_contactpage {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        align-content: end;
+        padding: 5%;
+    }
+
+    #log-in-form, #contact-form {
+        margin: 5%;
     }
 
 
