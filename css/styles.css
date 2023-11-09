@@ -52,7 +52,7 @@ input.input_newsletter {
 .header_page {
     margin: 2%;
     padding-left: 5%;
-    font-size: larger;
+    font-size:x-large;
 }
 
 /* Fonts */
@@ -87,7 +87,7 @@ nav {
 
 
 nav a {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 15px 20px;
@@ -109,10 +109,20 @@ nav a:hover {
     float: right;
 }
 
+a.nav_gamespage {
+    color: #000;
+    text-decoration: none;
+    font-size: large;
+}
+
+li.nav_gamespage {
+    padding-bottom: 3%;
+}
+
 
 /* Buttons */
 
-.cta {
+.cta, .cta-read-more, .cta-input-footer, .cta_heart  {
     background-color: #F0A53C;
     color: #FFF;
     padding: 10px;
@@ -120,29 +130,16 @@ nav a:hover {
     text-decoration: none;
 }
 
-.cta-read-more {
+.cta-read-more, .cta_heart {
     background-color: #3CAAF0;
-    color: #FFF;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
 }
 
 .cta-input-footer {
     background-color: #3CAAF0;
-    color: #FFF;
     padding: 5px;
-    border-radius: 5px;
     border-style: none;
-    text-decoration: none;
 }
 
-.cta_heart {
-    background-color: #3CAAF0;
-    padding: 10px;
-    border-style: none;
-    border-radius: 5px;
-}
 
 .cta_heart_gamespage {
     background-color: #3CAAF0;
@@ -308,10 +305,7 @@ nav a:hover {
 }
 
 .sidebar_gamespage {
-    text-decoration: none;
-    background-color: #FFF;
-    color: #000;
-    list-style-type: none;
+    list-style-type: "\00BB";
 }
 
 .buttons_gamespage {
@@ -449,34 +443,67 @@ textarea {
 
 .checkout_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5% 0%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    padding: 5% 5%;
+    gap: 5%;
 }
-.checkout_forms {
-    padding-left: 5%;
+
+.checkout_containerone {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.checkout_containertwo {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.checkout_containerthree {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 60%;
+}
+
+.customer_details {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: thin;
+    border-radius: 3%;
+    padding: 5%;
+    max-height: 300px;
+}
+
+.header_customer_detail {
+    color: lightgrey;
 }
 
 .payment_radio {
     display: flex;
     font-size: small;
     min-width: 100px;
-    padding: 5%;
 }
 
-.checkout_summary{
+.payment_info_header {
+    padding: 3% 0% 0% 0%;
+}
+
+.payment_info {
+    font-size: medium;
+}
+
+.checkout_summary {
     background-color: #EBF7FD;
     max-width: 500px;
     min-height: 400px;
-    padding: 10%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    padding: 10%; 
 }
-
 
 .details_checkout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1% 3%;
+    align-items: start;
+    padding: 1% 0%;
 }
 
 .gameimage_checkout {
@@ -492,41 +519,60 @@ input.cardholder {
 
 input.discount_input {
     display: inline;
-    padding: 5px 10px;
+    padding: 10px;
 }
 
-
-fieldset.checout_fieldset{
-    padding-left: 5%;
-    font-size: large;
-    font-family: Tahoma, Verdana, sans-serif;
-    max-width: 70%;
+.discount_container {
+    padding: 3% 2% 0%;
 }
 
-hr.solid {
-    border-style: solid;
-    
-}
-
-.container_grid_checkout {
+.container_grid_checkout, .checkout_total {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0% 10%;
+    padding: 2% 10%;
 }
 
 .price_checkout {
     text-align: end;
 }
 
-.payment_info {
-    padding: 0%;
+.checkout_text, .checkout_text_top {
+    padding: 4% 0%;
+}
+
+/*Checkout Sucess */
+
+.container_checkoutsucess {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    padding: 5% 5%;
+    gap: 5%;
+}
+
+.success_information {
+    padding: 3%;
+}
+
+.green_checksymbol {
+    max-width: 50%;
+    padding-left: 25%;
+}
+
+.order_confirmed{
+    font-size: medium;
+    padding-bottom: 5%;
 }
 
 
 /* About Page */
+.container_about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .about_image {
-    max-width: 40%;
-    float: right;
+    max-width: 80%;
     padding: 5%;
     margin: 5%;
 }
@@ -680,7 +726,12 @@ hr.solid {
         padding-bottom: 2%;
     }
 
-    /* Contact */
+    /* About */
+    .container_about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
 }
 
 /* Tablet */ 

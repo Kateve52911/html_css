@@ -35,10 +35,82 @@
             </Section>
 
             <Section class="checkout_container">
-                <Section class="checkout_forms">
+                <section class="customer_details checkout_containerone">
+                    <p class="header_customer_detail">Contact</p>
+                    <p>olanormann@gmail.com</p>
+
+                    <hr/>
+
+                    <p class="header_customer_detail">Address</p>
+                    <p>Gammel gate 1</p>
+                    <p>01234 Oslo</p>
+                    <p>Norway</p>
+
+                    <hr/>
+
+                    <p class="header_customer_detail">Shipping medthod</p>
+                    <p>Download</p>
+
+                </section>
+
+                <Section class="checkout_summary checkout_containertwo">
+                        <h3>YOUR CART</h3>
+                        <section class="details_checkout">
+                            <section>
+                                <img src="images/GameHub_racing.jpg" alt="cover of racing game" class="gameimage_checkout"> 
+                            </section>
+                            <section>
+                                <p class="checkout_text_top">Playbox Racing!</p>
+                                <p class="checkout_text_top">Digital</p>
+                            </section>
+                            <section>
+                                <p>$49.99</p>
+                            </section>
+                        </section>
+
+                        <hr/>
+
+                        <section class="discount_container">
+                            <form action="POST">
+                                <input class="discount_input" type="text" name="discountcode" placeholder="Enter discount code">
+                                <input type="submit" value="Apply" class="cta-discount discount_input">
+                            </form>
+                        </section>
+
+                        <hr/>
+
+                        <section class="container_grid_checkout">
+                            <section>
+                                <p class="checkout_text">Item subtotal</p>
+                                <p class="checkout_text">VAT</p>
+                                <p class="checkout_text">Shipping</p>
+                            </section>
+
+                            <section class="price_checkout">
+                                <p class="checkout_text">$ 49.99</p>
+                                <p class="checkout_text">$ 4.99</p>
+                                <p class="checkout_text">$ 0</p>
+                            </section>
+                        </section>
+
+                        <hr/>
+
+                        <section class="checkout_total">
+                            <section>
+                                <p class="checkout_text">Total</p>
+                            </section>
+
+                            <section class="price_checkout">
+                                <p class="checkout_text">$ 54.98</p>
+                            </section>
+                        </section>
+                </section>
+
+                <Section class="checkout_forms checkout_containerthree">
+                    <section>
+                        <h2 class="payment_info_header">Payment Information:</h2>
+                    </section>
                     <form action="POST">
-                        <Fieldset class="checout_fieldset">
-                            <legend>Select payment method:</legend>
                             <Section class="payment_radio">
                                 <form action="">
                                     <label for="Payment_type">Card</label>
@@ -60,57 +132,8 @@
                                </form>
                                 
                             </section>    
-                        </Fieldset>
                     </form>
                 </Section>
-
-                <Section>
-                    <section class="checkout_summary">
-                        <h3>YOUR CART</h3>
-                        <section class="details_checkout">
-                            <section>
-                                <img src="images/GameHub_racing.jpg" alt="cover of racing game" class="gameimage_checkout"> 
-                            </section>
-                            <section id="checkout_text">
-                                <p>Playbox Racing!</p>
-                                <p>Digital</p>
-                            </section>
-                            <section>
-                                <p>$49.99</p>
-                            </section>
-                        </section>
-
-                        <hr class="solid">
-
-                        <section>
-                            <form action="POST">
-                                <input class="discount_input" type="text" name="discountcode" placeholder="Enter discount code">
-                                <input type="submit" value="Apply" class="cta-discount discount_input">
-                            </form>
-                        </section>
-
-                        <hr>
-
-                        <section class="container_grid_checkout">
-                            <section>
-                                <p>Item subtotal</p>
-                                <p>VAT</p>
-                                <p>Shipping</p>
-                            </section>
-
-                            <section class="price_checkout">
-                                <p>$ 49.99</p>
-                                <p>$ 4.99</p>
-                                <p>$ 0</p>
-                            </section>
-
-                        
-                            
-                        </section>
-                        
-                        
-
-                </section>
     
             </Section>
 
@@ -137,18 +160,18 @@
                 <section class="social_media">
                     <nav>
                         <ul>
-                            <li><a href="contact.html"><i class="fa-solid fa-video" style="color: #fff;"></i></a></li>
-                            <li><a href="contact.html"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a></li>
-                            <li><a href="contact.html"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-solid fa-video fa-2xl" style="color: #fff;"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-facebook fa-2xl" style="color: #fff;"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-instagram fa-2xl" style="color: #fff;"></i></a></li>
                         </ul>
                     </nav>
                 </section>
-
+              
                 <section class="newsletter">
                     <form action="POST">
                         <label for="newsletter">Join our mailing list!</label>
-                        <input type="email" name="newsletter" id="newsletter" placeholder="Enter email">
-                        <input type="submit" value="submit" class="cta-input-footer">
+                        <input type="email" name="newsletter" id="newsletter" placeholder="Enter email" class="input_newsletter">
+                        <input type="submit" value="Submit" class="cta-input-footer input_newsletter">
                     </form>
                 </section>
 
