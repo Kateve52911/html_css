@@ -4,11 +4,10 @@
 header, footer {
     background-color: #0867A3;
     color: #FFF;
-    
 }
 
 header {
-    padding: 15px;
+    padding: 2%;
     text-align: left;
     position: relative;
     color:#FFF
@@ -26,7 +25,6 @@ header {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: 1fr;
-    margin: 3% 5%;
     padding: 5% 2%;
 }
 
@@ -34,7 +32,6 @@ header {
     display: inline-grid;
     margin: 3%;
     font-size: small;
-    
 }
 
 .newsletter {
@@ -45,7 +42,7 @@ header {
 }
 
 input.input_newsletter {
-    display: inline;
+    display: inline-block;
     padding: 2% 4%;
 }
 
@@ -53,6 +50,10 @@ input.input_newsletter {
     margin: 2%;
     padding-left: 5%;
     font-size:x-large;
+}
+
+.iconfooter {
+    color: #FFF;
 }
 
 /* Fonts */
@@ -65,20 +66,23 @@ p {
     font-family: Palatino, Verdana, sans-serif;
 }
 
-
 /* Nav */
 
 nav, #menu-checkbox {
     display: none;
 }
 
-#menu-checkbox:checked ~nav {
+#user-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~nav, .user-icon:checked ~nav  {
     display: block;
 }
 
 nav {
     background: #0867A3;
-    /* position: absolute; */
+    position: absolute;
 }
 
 .header_links {
@@ -93,7 +97,6 @@ nav a {
     padding: 15px 20px;
     font-family: Palatino, Verdana, sans-serif;
 }
-
 
 nav li {
     display: inline-block;
@@ -122,45 +125,7 @@ li.nav_gamespage {
 
 /* Buttons */
 
-.cta, .cta-read-more, .cta-input-footer, .cta_heart  {
-    background-color: #F0A53C;
-    color: #FFF;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.cta-read-more, .cta_heart {
-    background-color: #3CAAF0;
-}
-
-.cta-input-footer {
-    background-color: #3CAAF0;
-    padding: 5px;
-    border-style: none;
-}
-
-
-.cta_heart_gamespage {
-    background-color: #3CAAF0;
-    padding: 10px;
-    border-style: none;
-    border-radius: 5px;
-    width: 20px;
-    float: right;
-}
-
-.cta_gamespage{
-    background-color: #F0A53C;
-    color: #FFF;
-    padding: 10px;
-    width: 80px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline;
-}
-
-.cta_pay {
+.cta, .cta-read-more, .cta-input-footer, .cta_heart, .cta_gamespage, .cta_pay, .cta-login, .cta-input, .cta-discount, .cta_heart_gamespage {
     background-color: #F0A53C;
     color: #FFF;
     padding: 10px;
@@ -169,36 +134,39 @@ li.nav_gamespage {
 }
 
 .cta-login {
-    background-color: #F0A53C;
     color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: none;
-    text-decoration: none;
 }
 
-.cta-input {
-    background-color: #3CAAF0;
-    color: #FFF;
-    padding: 10px;
-    border-radius: 5px;
+.cta-input, .cta-input-footer, .cta_heart_gamespage, .cta-login, .cta-discount {
     border-style: none;
-    text-decoration: none;
 }
 
 .cta-discount {
-    background-color: #F0A53C;
-    color: #fff;
     padding: 5px 10px;
-    border-radius: 5px;
-    border-style: none;
-    text-decoration: none;
+}
+
+.cta_gamespage {
+    width: 80px;
+    display: inline;
+}
+
+.cta-read-more, .cta_heart, .cta-input, .cta-input-footer, .cta_heart_gamespage {
+    background-color: #3CAAF0;
+}
+
+.cta-input-footer {
+    padding: 5px;
+}
+
+.cta_heart_gamespage {
+    width: 20px;
+    float: right;
 }
 
 
 /* Home Page */
 
-#first_section_homepage {
+.first_section_homepage {
     background-image: url(../images/motocross-big.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,48 +184,33 @@ li.nav_gamespage {
     padding-top: 400px;
 }
 
-/*.container-homepage > * {
-    flex: 1;
-}
-*/
-
 .container-homepage {
-    display: inline-grid;
+    display: grid;
     text-align: left;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
     margin: 5%;
     gap: 5%;
 }
 
-
 .game-text {
-    padding: 5px 25px 15px 0px;
+    margin: 5%;
+    font-family: Palatino, Verdana, sans-serif;
 }
 
 .gameimage {
-    max-width: 20%;
+    max-width: 30%;
     float:left ;
-    margin: 2%;
-    
+    margin: 2%;  
 }   
 
-.container-flex-h2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-}
-
 .h2-item {
-    padding: 0%;
+    padding-left: 5%;
 }
 
 #top-text {
     padding-left: 5%;
 }
-
-
 
 /* Games Page */
 
@@ -272,7 +225,7 @@ li.nav_gamespage {
     margin-right: 5%;
 }
 
-.grid-container {
+.sidebar-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
@@ -280,23 +233,19 @@ li.nav_gamespage {
     padding: 5%;
 }
 
-.container_games_page {
+.container_games_page, .row1, .row2, .row3, .game, .buttons_gamespage {
     display: flex;
     flex-direction: column;
 }
 
 .row1, .row2, .row3 {
-    display: flex;
     flex-direction: row;
     align-content: baseline;
     padding-bottom: 5%;
 }
 
 .game {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    
 }
 
 .image_gamepage {
@@ -309,10 +258,13 @@ li.nav_gamespage {
 }
 
 .buttons_gamespage {
-    display: flex;
     gap: 3%;
+    flex-direction: row;
 }
 
+.heartgamepage {
+    color: #FFF;
+}
 
 /* Game Page Racing*/
 
@@ -359,7 +311,6 @@ fieldset.game_page {
     border-style: outset ;
 }
 
-
 .delivery_info {
     display: grid;
     grid-template-columns: 50px 200px;
@@ -371,20 +322,14 @@ fieldset.game_page {
     margin-top: 60%;
 }
 
-
-
 /* Contact Page */
 
-#top-section-contact-page{
-    background-image: url(../images/GameHub_Logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 40vh;
-    margin-left: 35%;
-    margin-right: 35%;
+.gameimage_contact {
+    max-width: 50%;
+    padding: 3% 25%;
 }
 
-input {
+input, textarea {
     display: block;
     margin-left: 30px;
     font-size: larger;
@@ -398,50 +343,52 @@ label {
     font-family: Palatino, Verdana, sans-serif;
 }
 
-textarea {
-    display: block;
-    margin-left: 30px;
-    font-size: larger;
-    font-family: Palatino, Verdana, sans-serif;
-}
-
-
 #contact-info {
     font-size: 25px;
     font-family: Palatino, Verdana, sans-serif;
+    margin-left: 7%;
 }
 
 #contact-form {
-    background-color: #EBF7FD;
-    margin-right: 20%;
-    margin-left: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    background-color: #f0a53c61;
+    margin: 5% 5% 20% 5%;
+    padding: 10% 5%;
+    justify-self: center;
 }
 
 #log-in-form {
-    margin-right: 5%;
-    margin-left: 20%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    margin: 5% 5% 20% 5%;
+    padding: 5% 5%;
+    background-color: #f0a53c61;
+    justify-self: center;
 }
 
 .form_contactpage {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    margin: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
 }
 
-#contact-info {
-    margin-left: 7%;
+.container_direct_contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 2% 2%;
 }
 
+.direct_contact_header {
+    font-weight:lighter ;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
 
+.directcontact_icons {
+    color: #0867A3;
+}
 
 /* Checkout Page */
 
-.checkout_container {
+.checkout_container, .details_checkout, .container_grid_checkout, .checkout_total {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
@@ -449,19 +396,28 @@ textarea {
     gap: 5%;
 }
 
-.checkout_containerone {
+.details_checkout {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    padding: 1% 0%;
+}
+
+.container_grid_checkout, .checkout_total {
+    padding: 2% 10%;
+}
+
+.checkout_containerone, .checkout_containerthree, .checkout_containertwo {
     grid-column: 1;
     grid-row: 1;
+    padding-top: 5%;
 }
 
 .checkout_containertwo {
     grid-column: 2;
-    grid-row: 1;
+    padding-top: 5%;
 }
 
 .checkout_containerthree {
-    grid-column: 1;
-    grid-row: 1;
     padding-top: 60%;
 }
 
@@ -493,17 +449,9 @@ textarea {
 }
 
 .checkout_summary {
-    background-color: #EBF7FD;
+    background-color:#f0a53c61;
     max-width: 500px;
-    min-height: 400px;
     padding: 10%; 
-}
-
-.details_checkout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
-    padding: 1% 0%;
 }
 
 .gameimage_checkout {
@@ -526,12 +474,6 @@ input.discount_input {
     padding: 3% 2% 0%;
 }
 
-.container_grid_checkout, .checkout_total {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 2% 10%;
-}
-
 .price_checkout {
     text-align: end;
 }
@@ -539,6 +481,7 @@ input.discount_input {
 .checkout_text, .checkout_text_top {
     padding: 4% 0%;
 }
+
 
 /*Checkout Sucess */
 
@@ -550,8 +493,21 @@ input.discount_input {
     gap: 5%;
 }
 
+.order_summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5%;
+    padding-top: 5%;
+}
+
+.ordersummary_header {
+    font-weight: bold;
+}
+
 .success_information {
     padding: 3%;
+    padding-top: 5%;
 }
 
 .green_checksymbol {
@@ -563,7 +519,6 @@ input.discount_input {
     font-size: medium;
     padding-bottom: 5%;
 }
-
 
 /* About Page */
 .container_about {
@@ -584,9 +539,6 @@ input.discount_input {
     padding: 8%;
 }
 
-
-
-
 /* Media Queries */
 
 /* Phone */
@@ -597,69 +549,112 @@ input.discount_input {
         position: static;
     }
 
-    .hamburger-icon {
+    .hamburger-icon  {
         display: none;
     }
 
     nav a {
         display: inline-block;
     }
+    
 }
 
 @media (max-width: 800px) {
-    /* Header and Footer */
 
+    /* Common settings? */
+    .container-homepage, .container_checkoutsucess, .checkout_container, .sidebar-container    {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 0%;
+    }
+
+    .checkout_container{
+        margin-top: 0%;
+        flex-direction: column-reverse;
+    }
+    
     .newsletter {
         font-size: x-small; 
-        padding: 1% 1% 1% 10%;
-        font-size: x-small;
+        padding: 2%
     }
 
-    #first_section {
-        background-image: url(../images/motorcross-small.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: bottom;
+    .first_section_homepage {
+        background-image: url(../images/motocross-big.jpg);
+        background-position-x: center;
         background-position-y: top;
-        min-height: 20vh;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    
-     /* Games Page */
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-        gap: 5%;
-        padding: 5%;
-    }
-
-    .row1, .row2, .row3 {
-        display: flex;
-        flex-direction: column;
-        align-content: baseline;
-        padding-bottom: 5%;
     }
 
     #top-section-games-page{
         background-image: url(../images/bluecarsmall.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
         background-position-x: left;
         background-position-y: bottom;
-        min-height: 20vh;
-        margin-left: 15%;
-        margin-right: 5%;
     }
+
+    .first_section_homepage, #top-section-games-page {
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 5%;
+        margin-left: 5%;
+    } 
+    
+    .game_section {
+        padding: 5% 0%;
+    }
+
+    .cta-read-more {
+        float: right;
+    }
+
+    .checkout_summary {
+        margin-top: 5%;
+    }
+    
+    .contact_info_footer {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 5%;
+        padding: 10%;
+    }
+    .social_media, .contact_text_footer {
+        display: flex;
+    }
+
+    nav.footer_social {
+        display: flex;
+    }
+
+
+
+     /* Games Page */
+
+    .cta_heart_gamespage {
+        padding: 5px;
+    }
+    
+    .cta_gamespage {
+
+        padding: 5px;
+        font-size: medium;
+    }
+
+    .row1, .row2, .row3 {
+        align-content: baseline;
+        padding-bottom: 5%;
+    }
+    
 
     /* Contact page */
     .form_contactpage {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        align-content: end;
-        padding: 5%, 2%;
+    }
+
+    .container_direct_contact{
+        font-size: small;
+    }
+
+    .direct_contact_header {
+        font-size: medium;
     }
 
     #log-in-form, #contact-form {
@@ -669,7 +664,7 @@ input.discount_input {
         max-width: 400px;
     }
 
-    input {
+    input, textarea {
         display: block;
         margin-left: 10px;
         font-size: small;
@@ -683,11 +678,10 @@ input.discount_input {
         font-family: Palatino, Verdana, sans-serif;
     }
     
-    textarea {
-        display: block;
-        margin-left: 10px;
-        font-size: small;
+    #contact-info {
+        font-size: larger;
         font-family: Palatino, Verdana, sans-serif;
+        margin-left: 7%;
     }
 
     /* Racing */
@@ -698,20 +692,21 @@ input.discount_input {
         margin: 5% 5%;
     }
 
+    .label_gamepage, .price_gamepage, .price_gamepage_one {
+        font-size: large;
+    }
+
     .label_gamepage {
         margin: 3%;
         padding: 0%;
-        font-size: medium;
     }
     
     .price_gamepage {
         margin-left: 15%;
-        font-size: medium;
     }
     
     .price_gamepage_one{
         margin-left: 18%;
-        font-size: medium;
     }
 
     .info_gamepage {
@@ -726,6 +721,14 @@ input.discount_input {
         padding-bottom: 2%;
     }
 
+    .checkout_containerone {
+        margin-top: 5%;
+    }
+
+    .checkout_containerthree {
+        padding-top: 0%;
+    }    
+
     /* About */
     .container_about {
         display: grid;
@@ -738,6 +741,3 @@ input.discount_input {
 @media (min-width: 801px) and (max-width: 1000px) {
     
 }
-
-
-/* Tablet */ 

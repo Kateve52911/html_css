@@ -21,7 +21,10 @@
                     <a href="about.html">About</a>
                 </nav>
                 <section class="signup">
-                    <nav><a href="contact.html">Log in / sign up</a></nav>
+                    <input type="checkbox" id="user-checkbox" class="user-icon">
+                    <label for="user-checkbox" class="user-icon">
+                    <i class="fa-regular fa-user fa-2xl" style="color: #fff;"></i></label>
+                    <nav><a href="contact.html">Sign in</a></nav>
                 </section>
             </section>
         </header>
@@ -30,11 +33,22 @@
                 <h1 >Contact us:</h1>
             </Section>
             
-            <section id="top-section-contact-page"></section>
+            <section>
+                <img src="images/GameHub_Logo.png" alt="the logo for Gamehub" class="gameimage_contact">
+            </section>
 
             <p id="contact-info">Looking for help? Log inn to you account to chat with our support staff. Or contact us via our contact form: </p>
 
             <section class="form_contactpage">
+                <section id="log-in-form">
+                    <form action="POST">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" class="username">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="password">
+                        <input type="submit" value="Log in" class="cta-login">
+                    </form>
+                </section>
                 <section id="contact-form">
                     <form action="POST">
                         <label for="full-name">Full name:</label>
@@ -46,14 +60,37 @@
                         <input type="submit" value="Submit" class="cta-input">
                     </form>
                 </section>
-                <section id="log-in-form">
-                    <form action="POST">
-                        <label for="username">Username:</label>
-                        <input type="text" name="username" id="username" class="username">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="password">
-                        <input type="submit" value="Log in" class="cta-login">
-                    </form>
+            </section>
+
+            <h3 class="direct_contact_header"> Or contact us directly:</h3>
+            <section class="container_direct_contact">
+                <section>
+                    <i class="fa-solid fa-location-dot fa-2xl directcontact_icons"></i>
+                </section>
+
+                <section>
+                    <i class="fa-solid fa-envelope fa-2xl directcontact_icons"></i>
+                </section>
+
+                <section>
+                    <i class="fa-solid fa-phone fa-2xl directcontact_icons"></i>
+                </section>
+            </section>
+
+            <section class="container_direct_contact">
+                <section>
+                    <p>1234 Street
+                        Town, State
+                        09765
+                        Country</p>
+                </section>
+
+                <section>
+                    <p>post@gamehub.com</p>
+                </section>
+
+                <section>
+                    <p>09645725</p>
                 </section>
             </section>
         </main>
@@ -79,9 +116,9 @@
                 <section class="social_media">
                     <nav>
                         <ul>
-                            <li><a href="contact.html"><i class="fa-solid fa-video fa-2xl" style="color: #fff;"></i></a></li>
-                            <li><a href="contact.html"><i class="fa-brands fa-facebook fa-2xl" style="color: #fff;"></i></a></li>
-                            <li><a href="contact.html"><i class="fa-brands fa-instagram fa-2xl" style="color: #fff;"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-solid fa-video fa-2xl iconfooter"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-facebook fa-2xl iconfooter"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-instagram fa-2xl iconfooter"></i></a></li>
                         </ul>
                     </nav>
                 </section>

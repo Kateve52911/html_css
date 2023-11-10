@@ -6,13 +6,14 @@
         <meta name="description" content="checkout">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/f6ecbff17b.js" crossorigin="anonymous"></script>
         <title>Gamehub | Checkout</title>
     </head>
     <body>
         <header>
             <section class="logo-image">
                 <input type="checkbox" id="menu-checkbox">
-                <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
+                <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars fa-2xl"></i></label>
                 <nav class="header_links">
                     <a href="index.html">Home</a>
                     <a href="games.html">Games</a>
@@ -20,14 +21,11 @@
                     <a href="about.html">About</a>
                 </nav>
 
-                <section>
-                    
-                </section>
-
                 <section class="signup">
                     <nav><a href="contact.html">Log in / sign up</a></nav>
                 </section>
             </section>
+        </header>
         </header>
         <main>
             <Section class="header_page">
@@ -35,6 +33,34 @@
             </Section>
 
             <Section class="checkout_container">
+                <Section class="checkout_forms checkout_containerthree">
+                    <section>
+                        <h2 class="payment_info_header">Payment Information:</h2>
+                        <form action="POST">
+                                <Section class="payment_radio">
+                                    <form action="">
+                                        <label for="Payment_type">Card</label>
+                                        <input type="radio" name="Paymentype" id="Payment_type">
+                                        <label for="Payment_type">Paypal</label>
+                                        <input type="radio" name="Paymentype" id="Payment_type">
+                                        <label for="Payment_type">Vipps</label>
+                                        <input type="radio" name="Paymentype" id="Payment_type">
+                                    </form>
+                                        
+                                </Section>
+                                <section class="payment_info">
+                                <form action="checkout_sucess.html">
+                                        <input type="text" name="Cardholder_name" class="checkout_page" placeholder="Cardholders name">
+                                        <input type="text" name="Card_number"  class="checkout_page" placeholder="Card number">
+                                        <input type="text" name="expirationdate"  class="checkout_page" placeholder="MM / YY">
+                                        <input type="text" name="expirationCVC"   class="checkout_page" placeholder="CVC">
+                                        <input type="submit" value="Pay" class="cta-login">
+                                </form>
+                                </section>    
+                        </form>
+                    </section>
+                </Section>
+
                 <section class="customer_details checkout_containerone">
                     <p class="header_customer_detail">Contact</p>
                     <p>olanormann@gmail.com</p>
@@ -53,87 +79,59 @@
 
                 </section>
 
+
                 <Section class="checkout_summary checkout_containertwo">
-                        <h3>YOUR CART</h3>
-                        <section class="details_checkout">
-                            <section>
-                                <img src="images/GameHub_racing.jpg" alt="cover of racing game" class="gameimage_checkout"> 
-                            </section>
-                            <section>
-                                <p class="checkout_text_top">Playbox Racing!</p>
-                                <p class="checkout_text_top">Digital</p>
-                            </section>
-                            <section>
-                                <p>$49.99</p>
-                            </section>
+                    <h3>YOUR CART</h3>
+                    <section class="details_checkout">
+                        <section>
+                            <img src="images/GameHub_racing.jpg" alt="cover of racing game" class="gameimage_checkout"> 
                         </section>
-
-                        <hr/>
-
-                        <section class="discount_container">
-                            <form action="POST">
-                                <input class="discount_input" type="text" name="discountcode" placeholder="Enter discount code">
-                                <input type="submit" value="Apply" class="cta-discount discount_input">
-                            </form>
+                        <section>
+                            <p class="checkout_text_top">Playbox Racing!</p>
+                            <p class="checkout_text_top">Digital</p>
                         </section>
-
-                        <hr/>
-
-                        <section class="container_grid_checkout">
-                            <section>
-                                <p class="checkout_text">Item subtotal</p>
-                                <p class="checkout_text">VAT</p>
-                                <p class="checkout_text">Shipping</p>
-                            </section>
-
-                            <section class="price_checkout">
-                                <p class="checkout_text">$ 49.99</p>
-                                <p class="checkout_text">$ 4.99</p>
-                                <p class="checkout_text">$ 0</p>
-                            </section>
+                        <section>
+                            <p>$49.99</p>
                         </section>
-
-                        <hr/>
-
-                        <section class="checkout_total">
-                            <section>
-                                <p class="checkout_text">Total</p>
-                            </section>
-
-                            <section class="price_checkout">
-                                <p class="checkout_text">$ 54.98</p>
-                            </section>
-                        </section>
-                </section>
-
-                <Section class="checkout_forms checkout_containerthree">
-                    <section>
-                        <h2 class="payment_info_header">Payment Information:</h2>
                     </section>
-                    <form action="POST">
-                            <Section class="payment_radio">
-                                <form action="">
-                                    <label for="Payment_type">Card</label>
-                                    <input type="radio" name="Paymentype">
-                                    <label for="Payment_type">Paypal</label>
-                                    <input type="radio" name="Paymentype">
-                                    <label for="Payment_type">Vipps</label>
-                                    <input type="radio" name="Paymentype">
-                                </form>
-                                    
-                            </Section>
-                            <section class="payment_info">
-                               <form action="checkout_sucess.html">
-                                    <input type="text" name="Cardholder_name" class="checkout_page" placeholder="Cardholders name">
-                                    <input type="text" name="Card_number"  class="checkout_page" placeholder="Card number">
-                                    <input type="text" name="expirationdate"  class="checkout_page" placeholder="MM / YY">
-                                    <input type="text" name="expirationCVC"   class="checkout_page" placeholder="CVC">
-                                    <input type="submit" value="Pay" class="cta-login">
-                               </form>
-                                
-                            </section>    
-                    </form>
-                </Section>
+
+                    <hr/>
+
+                    <section class="discount_container">
+                        <form action="POST">
+                            <input class="discount_input" type="text" name="discountcode" placeholder="Enter discount code">
+                            <input type="submit" value="Apply" class="cta-discount discount_input">
+                        </form>
+                    </section>
+
+                    <hr/>
+
+                    <section class="container_grid_checkout">
+                        <section>
+                            <p class="checkout_text">Item subtotal</p>
+                            <p class="checkout_text">VAT</p>
+                            <p class="checkout_text">Shipping</p>
+                        </section>
+
+                        <section class="price_checkout">
+                            <p class="checkout_text">$ 49.99</p>
+                            <p class="checkout_text">$ 4.99</p>
+                            <p class="checkout_text">$ 0</p>
+                        </section>
+                    </section>
+
+                    <hr/>
+
+                    <section class="checkout_total">
+                        <section>
+                            <p class="checkout_text">Total</p>
+                        </section>
+
+                        <section class="price_checkout">
+                            <p class="checkout_text">$ 54.98</p>
+                        </section>
+                    </section>
+            </section>
     
             </Section>
 
@@ -160,9 +158,9 @@
                 <section class="social_media">
                     <nav>
                         <ul>
-                            <li><a href="contact.html"><i class="fa-solid fa-video fa-2xl" style="color: #fff;"></i></a></li>
-                            <li><a href="contact.html"><i class="fa-brands fa-facebook fa-2xl" style="color: #fff;"></i></a></li>
-                            <li><a href="contact.html"><i class="fa-brands fa-instagram fa-2xl" style="color: #fff;"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-solid fa-video fa-2xl iconfooter"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-facebook fa-2xl iconfooter"></i></a></li>
+                            <li><a href="contact.html"><i class="fa-brands fa-instagram fa-2xl iconfooter"></i></a></li>
                         </ul>
                     </nav>
                 </section>
