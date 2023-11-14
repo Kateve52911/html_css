@@ -567,7 +567,7 @@ input.discount_input {
 @media (max-width: 800px) {
 
     /* Common settings? */
-    .container-homepage, .container_checkoutsucess, .checkout_container {
+    .container-homepage, .container_checkoutsucess, .checkout_container, .container_gamepage {
         display: flex;
         flex-direction: column;
         padding: 5% 0%;
@@ -658,6 +658,7 @@ input.discount_input {
         padding: 1% 20%;
         color: #000;
         font-size: medium;
+    }
 
     /* Contact page */
     .form_contactpage {
