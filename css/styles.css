@@ -10,7 +10,7 @@ header {
     padding: 2%;
     text-align: left;
     position: relative;
-    color:#FFF
+    color:#FFF;
 }
 
 .logo-image {
@@ -313,7 +313,7 @@ fieldset.game_page {
     margin: 4% 0%;
     max-width: 80%;
     padding-top: 4%;
-    border-style: outset ;
+    border-style: outset;
 }
 
 .delivery_info {
@@ -589,7 +589,7 @@ input.discount_input {
         background-position-y: top;
     }
 
-    #top-section-games-page{
+    #bottom-section-games-page{
         background-image: url(../images/bluecarsmall.jpg);
         background-position-x: left;
         background-position-y: bottom;
@@ -623,7 +623,6 @@ input.discount_input {
 
     .contact_text_footer, nav.footer_social  {
         display: flex;
-
     }
 
      /* Games Page */
@@ -633,7 +632,6 @@ input.discount_input {
     }
     
     .cta_gamespage {
-
         padding: 5px;
         font-size: medium;
     }
@@ -647,6 +645,19 @@ input.discount_input {
     .game {
         max-width: 50%;
     }
+
+    a.nav_gamespage {
+        font-size: small;
+    }
+    
+    li.nav_gamespage {
+        margin: 1% 5%;
+    }
+
+    .h2-item_topbar {
+        padding: 1% 27%;
+        color: #000;
+        font-size: medium;
 
     /* Contact page */
     .form_contactpage {
