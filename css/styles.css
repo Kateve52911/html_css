@@ -24,7 +24,7 @@ header {
 .contact_info_footer {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     padding: 5% 2%;
 }
 
@@ -64,6 +64,15 @@ h1, h2, h3 {
 
 p {
     font-family: Palatino, Verdana, sans-serif;
+}
+
+.h2-item {
+    padding-left: 5%;
+}
+
+.h2-item_topbar {
+    padding: 1% 38%;
+    color: #000;
 }
 
 /* Nav */
@@ -115,17 +124,17 @@ nav a:hover {
 a.nav_gamespage {
     color: #000;
     text-decoration: none;
-    font-size: large;
+    font-size: larger;
 }
 
 li.nav_gamespage {
-    padding-bottom: 3%;
+    margin: 1% 9%;
 }
 
 
 /* Buttons */
 
-.cta, .cta-read-more, .cta-input-footer, .cta_heart, .cta_gamespage, .cta_pay, .cta-login, .cta-input, .cta-discount, .cta_heart_gamespage {
+.cta, .cta-read-more, .cta-input-footer, .cta_heart, .cta_gamespage, .cta_pay, .cta-login, .cta-input, .cta-discount, .cta_heart_gamespage, .cta_gamepage {
     background-color: #F0A53C;
     color: #FFF;
     padding: 10px;
@@ -146,8 +155,10 @@ li.nav_gamespage {
 }
 
 .cta_gamespage {
-    width: 80px;
+    width: 60px;
     display: inline;
+    margin-right: 10%;
+    padding: 10% 15%;
 }
 
 .cta-read-more, .cta_heart, .cta-input, .cta-input-footer, .cta_heart_gamespage {
@@ -204,25 +215,21 @@ li.nav_gamespage {
     margin: 2%;  
 }   
 
-.h2-item {
-    padding-left: 5%;
-}
-
 #top-text {
     padding-left: 5%;
 }
 
 /* Games Page */
 
-#top-section-games-page{
+#bottom-section-games-page{
     background-image: url(../images/bluecar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
     background-position-y: bottom;
     min-height: 50vh;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0% 5%;
+    padding: 5%;
 }
 
 .nav_gamespage{
@@ -250,9 +257,10 @@ li.nav_gamespage {
     padding: 0%;
 }
 
-.sidebar_gamespage {
-    list-style-type: "\00BB";
+.topbar_gamespage {
+    background-color: #0868a33b;
 }
+
 
 .buttons_gamespage {
     gap: 3%;
@@ -609,18 +617,14 @@ input.discount_input {
     .contact_info_footer {
         display: flex;
         flex-direction: column-reverse;
-        margin: 5%;
-        padding: 10%;
+        min-height: auto;
+        padding: 10% 5%;
     }
-    .social_media, .contact_text_footer {
+
+    .contact_text_footer, nav.footer_social  {
         display: flex;
+
     }
-
-    nav.footer_social {
-        display: flex;
-    }
-
-
 
      /* Games Page */
 
