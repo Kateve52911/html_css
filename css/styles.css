@@ -586,6 +586,7 @@ input.discount_input {
         background-image: url(../images/bluecarsmall.jpg);
         background-position-x: left;
         background-position-y: bottom;
+        min-height: 20vh;
     }
 
     .first_section_homepage, #top-section-games-page {
@@ -611,15 +612,19 @@ input.discount_input {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         padding: 5%;
+        justify-content: center;
+        gap: 2%;
     }
 
     .contact_text_footer, nav.footer_social  {
         display: flex;
-        font-size: xx-small;
+
     }
-    .newsletter {
-        font-size: x-small; 
+    .newsletter, .contact_text_footer, nav.footer_social {
+        font-size: xx-small; 
+        padding: 0% 4%;
     }
+    
     
      /* Games Page */
 
