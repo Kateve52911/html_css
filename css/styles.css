@@ -1,6 +1,5 @@
 
 /* Header & Footer */
-
 header, footer {
     background-color: #0867A3;
     color: #FFF;
@@ -51,12 +50,11 @@ input.input_newsletter {
 }
 
 /* Fonts */
-
 h1, h2, h3 {
     font-family: Tahoma, Verdana, sans-serif;
 }
 
-p {
+p, #first_section_text, input, textarea, label, input.cardholder, #contact-info  {
     font-family: Palatino, Verdana, sans-serif;
 }
 
@@ -69,8 +67,11 @@ p {
     color: #000;
 }
 
-/* Nav */
+#contact-info, a.nav_gamespage, input, textarea, label {
+    font-size: larger;
+}
 
+/* Nav */
 nav, #menu-checkbox {
     display: none;
 }
@@ -92,7 +93,6 @@ nav {
     float: left;
 }
 
-
 nav a {
     color: #fff;
     text-decoration: none;
@@ -107,7 +107,7 @@ nav li {
     font-family: Palatino, Verdana, sans-serif;
 }
 
-nav a:hover {
+nav a:hover, a.nav_gamespage:hover {
     text-decoration: underline;
 }
 
@@ -118,20 +118,13 @@ nav a:hover {
 a.nav_gamespage {
     color: #000;
     text-decoration: none;
-    font-size: larger;
-}
-
-a.nav_gamespage:hover {
-    text-decoration: underline;
 }
 
 li.nav_gamespage {
     margin: 1% 9%;
 }
 
-
 /* Buttons */
-
 .cta, .cta-read-more, .cta-input-footer, .cta_heart, .cta_gamespage, .cta_pay, .cta-login, .cta-input, .cta-discount, .cta_heart_gamespage, .cta_gamepage {
     background-color: #F0A53C;
     color: #FFF;
@@ -163,6 +156,14 @@ li.nav_gamespage {
     background-color: #3CAAF0;
 }
 
+.cta-read-more {
+    transition-property: background-color;
+}
+
+.cta-read-more:hover {
+    background-color: #F0A53C;
+}
+
 .cta-input-footer {
     padding: 5px;
 }
@@ -172,9 +173,7 @@ li.nav_gamespage {
     float: right;
 }
 
-
 /* Home Page */
-
 .first_section_homepage {
     background-image: url(../images/motocross-big.jpg);
     background-repeat: no-repeat;
@@ -189,7 +188,6 @@ li.nav_gamespage {
 #first_section_text {
     color: #FFF;
     font-size: large;
-    font-family: Palatino, Verdana, sans-serif;
     padding-top: 33%;
 }
 
@@ -217,8 +215,11 @@ li.nav_gamespage {
     padding-left: 5%;
 }
 
-/* Games Page */
+.topbar_homepage {
+    padding: 10px;
+}
 
+/* Games Page */
 #bottom-section-games-page{
     background-image: url(../images/bluecar.jpg);
     background-repeat: no-repeat;
@@ -255,7 +256,7 @@ li.nav_gamespage {
     padding: 0%;
 }
 
-.topbar_gamespage {
+.topbar_gamespage, .topbar_homepage {
     background-color: #0868a33b;
 }
 
@@ -270,7 +271,6 @@ li.nav_gamespage {
 }
 
 /* Game Page Racing*/
-
 .gameimage_gamepage {
     max-width: 75%;
 }
@@ -326,41 +326,34 @@ fieldset.game_page {
 }
 
 /* Contact Page */
-
 .gameimage_contact {
-    max-width: 50%;
-    padding: 3% 25%;
+    max-width: 30%;
+    padding: 3% 35%;
 }
 
 input, textarea {
     display: block;
-    margin-left: 30px;
-    font-size: larger;
-    font-family: Palatino, Verdana, sans-serif;
     margin-bottom: 4%;
 }
 
-label {
+input, textarea, label {
     margin-left: 30px;
-    font-size: larger;
-    font-family: Palatino, Verdana, sans-serif;
 }
 
 #contact-info {
     font-size: 25px;
-    font-family: Palatino, Verdana, sans-serif;
     margin-left: 7%;
 }
 
 #contact-form {
     background-color: #f0a53c61;
-    margin: 5% 5% 20% 5%;
-    padding: 10% 5%;
+    margin: 0% 0% 20% 5%;
+    padding: 5% 5%;
     justify-self: center;
 }
 
 #log-in-form {
-    margin: 5% 5% 20% 5%;
+    margin: 0% 0% 20% 5%;
     padding: 5% 5%;
     background-color: #f0a53c61;
     justify-self: center;
@@ -377,12 +370,13 @@ label {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin: 2% 2%;
-}
+} 
 
 .direct_contact_header {
     font-weight:lighter ;
     padding-left: 5%;
     margin-bottom: 5%;
+    margin-top: 0%;
 }
 
 .directcontact_icons {
@@ -390,7 +384,6 @@ label {
 }
 
 /* Checkout Page */
-
 .checkout_container, .details_checkout, .container_grid_checkout, .checkout_total {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -464,7 +457,6 @@ label {
 input.cardholder {
     display: block;
     font-size: large;
-    font-family: Palatino, Verdana, sans-serif;
     margin-bottom: 2%;
 }
 
@@ -485,9 +477,7 @@ input.discount_input {
     padding: 4% 0%;
 }
 
-
 /*Checkout Sucess */
-
 .container_checkoutsucess {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -545,7 +535,6 @@ input.discount_input {
 /* Media Queries */
 
 /* Phone */
-
 @media (min-width: 800px) {
     nav {
         display: block;
@@ -559,7 +548,6 @@ input.discount_input {
     nav a {
         display: inline-block;
     }
-    
 }
 
 @media (max-width: 799px) {
@@ -578,7 +566,6 @@ input.discount_input {
     }
 
     #first_section_text {
-        font-size: medium;
         padding-top: 142%;
     }
 
@@ -634,7 +621,6 @@ input.discount_input {
     
     .cta_gamespage {
         padding: 5px;
-        font-size: medium;
     }
 
     .row1, .row2, .row3 {
@@ -647,7 +633,7 @@ input.discount_input {
         max-width: 50%;
     }
 
-    a.nav_gamespage {
+    a.nav_gamespage, .container_direct_contact  {
         font-size: small;
     }
     
@@ -658,7 +644,6 @@ input.discount_input {
     .h2-item_topbar {
         padding: 1% 20%;
         color: #000;
-        font-size: medium;
     }
 
     /* Contact page */
@@ -667,11 +652,7 @@ input.discount_input {
         grid-template-columns: 1fr;
     }
 
-    .container_direct_contact{
-        font-size: small;
-    }
-
-    .direct_contact_header {
+    .direct_contact_header, .h2-item_topbar, .cta_gamespage, #first_section_text  {
         font-size: medium;
     }
 
@@ -682,20 +663,14 @@ input.discount_input {
         max-width: 400px;
     }
 
-    input, textarea {
-        display: block;
+    input, textarea, label {
         margin-left: 10px;
         font-size: small;
+    }
+
+    input, textarea {
+        display: block;
         margin-bottom: 4%;
-    }
-    
-    label {
-        margin-left: 10;
-        font-size: small;
-    }
-    
-    #contact-info {
-        font-size: larger;
     }
 
     /* Checkout */
@@ -885,7 +860,6 @@ input.discount_input {
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
         padding: 3% 3%;
-        
     }
 
     .order_summary {
@@ -904,12 +878,7 @@ input.discount_input {
         padding: 3% 25%;
     }
 
-    input, textarea {
+    input, textarea, label {
         font-size: medium;
     }
-
-    label {
-        font-size: medium;
-    }
-
 }
