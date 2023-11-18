@@ -84,11 +84,7 @@ p, #first_section_text, input, textarea, label, input.cardholder, #contact-info,
 }
 
 /* Nav */
-nav, #menu-checkbox {
-    display: none;
-}
-
-#user-checkbox {
+nav, #menu-checkbox, #user-checkbox   {
     display: none;
 }
 
