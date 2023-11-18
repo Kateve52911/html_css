@@ -1,18 +1,16 @@
-
 /* Header & Footer */
 header, footer {
     background-color: #0867A3;
-    color: #FFF;
 }
 
 header {
+    /* Header spesific styles */
     padding: 2%;
     text-align: left;
     position: relative;
-    color:#FFF;
 }
 
-.logo-image {
+.logo_image {
     background-image: url(../images/GameHub_Logo.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,21 +19,17 @@ header {
 }
 
 .contact_info_footer {
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
     grid-template-rows: 1fr;
     padding: 5% 2%;
-}
+}   
 
 .text_footer, .info_footer  {
     display: inline-grid;
     margin: 3%;
-    font-size: small;
     padding-top: 2%;
 }
 
 .newsletter {
-    font-size: small;
     text-decoration: none;
     padding-top: 6%;
 }
@@ -45,10 +39,7 @@ input.input_newsletter {
     padding: 2% 4%;
 }
 
-.iconfooter {
-    color: #FFF;
-}
-
+/* Topbar */
 .topbar_gamespage, .topbar_homepage, .topbar_contactpage, .topbar_about {
     background-color: #0868a33b;
 }
@@ -57,12 +48,16 @@ input.input_newsletter {
     padding: 10px;
 }
 
+.topbar_homepage {
+    padding-bottom: 2%;
+}
+
 /* Fonts */
 h1, h2, h3 {
     font-family: Tahoma, Verdana, sans-serif;
 }
 
-p, #first_section_text, input, textarea, label, input.cardholder, #contact-info, .newsletter  {
+p, #first_section_text, input, textarea, label, input.cardholder, #contact-info, .newsletter, .game_text, nav a, nav li  {
     font-family: Palatino, Verdana, sans-serif;
 }
 
@@ -75,20 +70,32 @@ p, #first_section_text, input, textarea, label, input.cardholder, #contact-info,
     color: #000;
 }
 
-#contact-info, a.nav_gamespage, input, textarea, label {
+#contact_info, a.nav_gamespage, input, textarea, label {
     font-size: larger;
 }
 
-.h1heading {
+.h1heading, #contact_info {
     font-size: x-large;
 }
 
-/* Nav */
-nav, #menu-checkbox {
-    display: none;
+#first_section_text, #about_info_text {
+    font-size: large;
 }
 
-#user-checkbox {
+.text_footer, .info_footer, .newsletter, .payment_radio {
+    font-size: small;
+}
+
+.order_confirmed, .payment_info, input.cardholder {
+    font-size: medium;
+}
+
+header, .icon_footer, .heart_icon_gamepage, nav a, .cta, .cta_read_more, .cta_input_footer, .cta_heart, .cta_gamespage, .cta_pay, .cta_login, .cta_input, .cta_discount, .cta_heart_gamespage, .cta_gamepage, #first_section_text, footer {
+    color:#FFF;
+}
+
+/* Nav */
+nav, #menu-checkbox, #user-checkbox   {
     display: none;
 }
 
@@ -106,17 +113,14 @@ nav {
 }
 
 nav a {
-    color: #fff;
     text-decoration: none;
     display: block;
     padding: 15px 20px;
-    font-family: Palatino, Verdana, sans-serif;
 }
 
 nav li {
     display: inline-block;
     padding: 10px 10px 0px;
-    font-family: Palatino, Verdana, sans-serif;
 }
 
 nav a:hover, a.nav_gamespage:hover {
@@ -136,24 +140,24 @@ li.nav_gamespage {
     margin: 1% 9%;
 }
 
+
 /* Buttons */
-.cta, .cta-read-more, .cta-input-footer, .cta_heart, .cta_gamespage, .cta_pay, .cta-login, .cta-input, .cta-discount, .cta_heart_gamespage, .cta_gamepage {
+.cta, .cta_read_more, .cta_input_footer, .cta_heart, .cta_gamespage, .cta_pay, .cta_login, .cta_input, .cta_discount, .cta_heart_gamespage, .cta_gamepage {
     background-color: #F0A53C;
-    color: #FFF;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
 }
 
-.cta-login {
+.cta_login {
     color: #000;
 }
 
-.cta-input, .cta-input-footer, .cta_heart_gamespage, .cta-login, .cta-discount {
+.cta_input, .cta_input_footer, .cta_heart_gamespage, .cta_login, .cta_discount {
     border-style: none;
 }
 
-.cta-discount {
+.cta_discount {
     padding: 5px 10px;
 }
 
@@ -164,15 +168,15 @@ li.nav_gamespage {
     padding: 10% 15%;
 }
 
-.cta-read-more, .cta_heart, .cta-input, .cta-input-footer, .cta_heart_gamespage {
+.cta_read_more, .cta_heart, .cta_input, .cta_input_footer, .cta_heart_gamespage {
     background-color: #3CAAF0;
 }
 
-.cta-read-more, cta_heart_gamespage {
+.cta_read_more, cta_heart_gamespage {
     transition-property: background-color;
 }
 
-.cta-read-more:hover {
+.cta_read_more:hover {
     background-color: #F0A53C;
 }
 
@@ -180,13 +184,31 @@ li.nav_gamespage {
     background-color: #F03C3C;
 }
 
-.cta-input-footer {
+.cta_input_footer {
     padding: 5px;
 }
 
 .cta_heart_gamespage {
     width: 20px;
     float: right;
+}
+
+/* Styles for grid and flex*/ 
+
+.container_about, .container_checkoutsucess, .order_summary, .checkout_container, .details_checkout, .container_grid_checkout, .checkout_total, .form_contactpage, .container_direct_contact, .container_homepage, .contact_info_footer, .delivery_info, .form_contactpage  {
+    display: grid;
+}
+
+.container_games_page, .row1, .row2, .row3, .game, .buttons_gamespage, .payment_radio {
+    display: flex;
+}   
+
+.contact_info_footer, .container_direct_contact, .details_checkout {
+    grid-template-columns:repeat(3, 1fr);
+} 
+
+.container_homepage, .form_contactpage, .checkout_container, .details_checkout, .container_grid_checkout, .checkout_total, .container_checkoutsucess, .container_about, .container_gamepage   {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Home Page */
@@ -202,23 +224,18 @@ li.nav_gamespage {
 }
 
 #first_section_text {
-    color: #FFF;
-    font-size: large;
     padding-top: 33%;
 }
 
-.container-homepage {
-    display: grid;
+.container_homepage {
     text-align: left;
-    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    margin: 5%;
+    margin: 2% 4% 4%;
     gap: 5%;
 }
 
-.game-text {
-    margin: 5%;
-    font-family: Palatino, Verdana, sans-serif;
+.game_text {
+    margin: 6%;
 }
 
 .gameimage {
@@ -227,13 +244,13 @@ li.nav_gamespage {
     margin: 2%;  
 }   
 
-#top-text {
+#top_text {
     padding-left: 5%;
 }
 
 
 /* Games Page */
-#bottom-section-games-page{
+#top_section_games_page {
     background-image: url(../images/bluecar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,9 +267,8 @@ li.nav_gamespage {
 }
 
 .container_games_page, .row1, .row2, .row3, .game, .buttons_gamespage {
-    display: flex;
     flex-direction: column;
-}
+} 
 
 .row1, .row2, .row3 {
     flex-direction: row;
@@ -274,10 +290,6 @@ li.nav_gamespage {
     flex-direction: row;
 }
 
-.heartgamepage {
-    color: #FFF;
-}
-
 /* Game Page Racing*/
 .gameimage_gamepage {
     max-width: 75%;
@@ -285,7 +297,6 @@ li.nav_gamespage {
 
 .container_gamepage {
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 350px 350px;
     margin: 5% 15%;
 }
@@ -323,7 +334,6 @@ fieldset.game_page {
 }
 
 .delivery_info {
-    display: grid;
     grid-template-columns: 50px 200px;
     grid-template-rows: 50px;
     margin: 5% 0%
@@ -348,8 +358,7 @@ input, textarea, label {
     margin-left: 30px;
 }
 
-#contact-info {
-    font-size: x-large;
+#contact_info {
     margin-left: 10%;
 }
 
@@ -358,6 +367,7 @@ input, textarea, label {
     justify-self: center;
     padding: 5% 5%;
 }
+
 #contact-form {  
     margin: 0% 0% 20% 5%;
 }
@@ -366,18 +376,11 @@ input, textarea, label {
     margin: 0% 0% 20% 5%;
 }
 
-.form_contactpage, .container_direct_contact {
-    display: grid;
-}
-
 .form_contactpage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: baseline;
 }
 
 .container_direct_contact{
-    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     margin: 2% 2%;
 } 
@@ -389,21 +392,18 @@ input, textarea, label {
     margin-top: 0%;
 }
 
-.directcontact_icons {
+.direct_contact_icons {
     color: #0867A3;
 }
 
 /* Checkout Page */
 .checkout_container, .details_checkout, .container_grid_checkout, .checkout_total {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     padding: 5% 5%;
     gap: 5%;
 }
 
 .details_checkout {
-    grid-template-columns: repeat(3, 1fr);
     align-items: start;
     padding: 1% 0%;
 }
@@ -441,17 +441,11 @@ input, textarea, label {
 }
 
 .payment_radio {
-    display: flex;
-    font-size: small;
     min-width: 100px;
 }
 
 .payment_info_header {
     padding: 3% 0% 0% 0%;
-}
-
-.payment_info {
-    font-size: medium;
 }
 
 .checkout_summary {
@@ -466,7 +460,6 @@ input, textarea, label {
 
 input.cardholder {
     display: block;
-    font-size: medium;
     margin-bottom: 2%;
 }
 
@@ -488,14 +481,11 @@ input.discount_input {
 }
 
 /*Checkout Sucess */
-
 .container_checkoutsucess, .order_summary {
-    display: grid;
     gap: 5%;
 }
 
 .container_checkoutsucess {
-    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     padding: 5% 5%;
 }
@@ -520,32 +510,24 @@ input.discount_input {
     padding-left: 25%;
 }
 
-.order_confirmed{
-    font-size: medium;
+.order_confirmed {
     padding-bottom: 5%;
 }
 
 /* About Page */
-.container_about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .about_image {
     max-width: 80%;
     padding: 5%;
     margin: 5%;
 }
 
-#about-info-text {
+#about_info_text {
     text-align: left;
     margin: 3%;
-    font-size: large;
     padding: 8%;
 }
 
 /* Media Queries */
-
 /* Phone */
 @media (min-width: 800px) {
     nav {
@@ -564,10 +546,15 @@ input.discount_input {
 
 @media (max-width: 799px) {
     /* Common settings? */
-    .container-homepage, .container_checkoutsucess, .checkout_container, .container_gamepage {
+    .container_homepage, .container_checkoutsucess, .checkout_container, .container_gamepage {
         display: flex;
         flex-direction: column;
         padding: 5% 0%;
+    }
+
+    .form_contactpage, .container_about, .contact_info_footer {
+        display: grid;
+        grid-template-columns: 1fr;
     }
     
     .first_section_homepage {
@@ -580,14 +567,14 @@ input.discount_input {
         padding-top: 142%;
     }
 
-    #bottom-section-games-page{
+    #top_section_games_page{
         background-image: url(../images/bluecarsmall.jpg);
         background-position-x: left;
         background-position-y: bottom;
         min-height: 20vh;
     }
 
-    .first_section_homepage, #top-section-games-page {
+    .first_section_homepage, #top_section_games_page {
         margin-right: 5%;
         margin-left: 5%;
     } 
@@ -596,18 +583,29 @@ input.discount_input {
         padding: 5% 0%;
     }
 
-    .cta-read-more {
+    .cta_read_more {
         float: right;
     }
 
-    .h1heading {
+    /* Fonts */
+    .newsletter, .contact_text_footer, nav.footer_social {
+        font-size: xx-small; 
+    }
+
+    a.nav_gamespage, .container_direct_contact, input, textarea, label  {
+        font-size: small;
+    }
+
+    .direct_contact_header, .h2-item_topbar, .cta_gamespage, #first_section_text, .h1heading   {
         font-size: medium;
+    }
+
+    .label_gamepage, .price_gamepage, .price_gamepage_one {
+        font-size: large;
     }
 
     /* Footer */
     .contact_info_footer {
-        display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         padding: 5%;
         justify-content: center;
@@ -616,7 +614,6 @@ input.discount_input {
 
     .contact_text_footer, nav.footer_social  {
         display: flex;
-
     }
 
     .footer_social {
@@ -624,7 +621,6 @@ input.discount_input {
     }
 
     .newsletter, .contact_text_footer, nav.footer_social {
-        font-size: xx-small; 
         padding: 0% 4%;
     }
     
@@ -651,10 +647,6 @@ input.discount_input {
     .game {
         max-width: 50%;
     }
-
-    a.nav_gamespage, .container_direct_contact  {
-        font-size: small;
-    }
     
     li.nav_gamespage {
         margin: 1% 3%;
@@ -666,15 +658,6 @@ input.discount_input {
     }
 
     /* Contact page */
-    .form_contactpage {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .direct_contact_header, .h2-item_topbar, .cta_gamespage, #first_section_text  {
-        font-size: medium;
-    }
-
     #log-in-form, #contact-form {
         margin: 5%;
     }
@@ -684,7 +667,6 @@ input.discount_input {
 
     input, textarea, label {
         margin-left: 10px;
-        font-size: small;
     }
 
     input, textarea {
@@ -708,10 +690,6 @@ input.discount_input {
         grid-template-columns: 1fr;
         grid-template-rows: 350px 350px 350px;
         margin: 5% 5%;
-    }
-
-    .label_gamepage, .price_gamepage, .price_gamepage_one {
-        font-size: large;
     }
 
     .label_gamepage {
@@ -749,8 +727,6 @@ input.discount_input {
 
     /* About */
     .container_about {
-        display: grid;
-        grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
 }
@@ -762,17 +738,15 @@ input.discount_input {
         font-size: smaller;
     }
 
-    .logo-image {
+    .logo_image {
         background-image: url(../images/GameHub_Logo.png);
         min-height: 5vh;
     }
     
-
     .contact_info_footer {
         display: flex;
         flex-direction: column;
         padding: 5% 25%;
-        
     }
     
     .newsletter {
@@ -780,7 +754,6 @@ input.discount_input {
     }
     
     .text_footer, .info_footer  {
-        font-size: small;
         padding-left: 2%;
     }
 
@@ -794,19 +767,31 @@ input.discount_input {
         padding: 2% 4%;
     }
 
+    /* Fonts */
+
+    a.nav_gamespage, input, textarea, label {
+        font-size: medium;
+    }
+
+    .text_footer, .info_footer, .order_summary {
+        font-size: small;
+    }
+
+    .h2-item_topbar, .label_gamepage, .price_gamepage, .price_gamepage_one, #first_section_text  {
+        font-size: large;
+    }
 
     /* Homepage */
     #first_section_text {
-        font-size: large;
         padding-top: 87%;
     }
 
-    .cta-read-more {
+    .cta_read_more {
         float: right;
     }
 
     /* Game page */
-    #bottom-section-games-page{
+    #top_section_games_page{
         background-image: url(../images/bluecar.jpg);
         min-height: 25vh;
     }
@@ -816,10 +801,6 @@ input.discount_input {
         align-items: center;
     }
     
-    a.nav_gamespage {
-        font-size: medium;
-    }
-    
     li.nav_gamespage {
         margin: 1% 7%;
     }
@@ -827,17 +808,12 @@ input.discount_input {
     .h2-item_topbar {
         padding: 1% 35%;
         color: #000;
-        font-size: large;
     }
 
     /* Racing page */
     .container_gamepage {
         display: grid;
         margin: 5% 5%;
-    }
-
-    .label_gamepage, .price_gamepage, .price_gamepage_one {
-        font-size: large;
     }
 
     .price_gamepage {
@@ -857,13 +833,11 @@ input.discount_input {
         margin-top: 5%;
     }
 
-
     /* Checkout */
     .checkout_container, .details_checkout, .container_grid_checkout, .checkout_total {
         padding: 3% 3%;
         gap: 3%;
     }
-    
     
     .container_grid_checkout, .checkout_total {
         padding: 2% 5%;
@@ -885,18 +859,10 @@ input.discount_input {
         gap: 3%;
         padding-top: 5%;
     }
-
-    .order_summary{
-        font-size: small;
-    }
         
     /* Contact Page */
     .gameimage_contact {
         max-width: 50%;
         padding: 3% 25%;
-    }
-
-    input, textarea, label {
-        font-size: medium;
     }
 }
