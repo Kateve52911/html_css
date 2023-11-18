@@ -4,7 +4,7 @@ header, footer {
 }
 
 header {
-    /* Header spesific styles */
+    /* Header specific styles */
     padding: 2%;
     text-align: left;
     position: relative;
@@ -91,7 +91,7 @@ p, #first_section_text, input, textarea, label, input.cardholder, #contact-info,
 }
 
 header, .icon_footer, .heart_icon_gamepage, nav a, .cta, .cta_read_more, .cta_input_footer, .cta_heart, .cta_gamespage, .cta_pay, .cta_login, .cta_input, .cta_discount, .cta_heart_gamespage, .cta_gamepage, #first_section_text, footer {
-    color:#FFF;
+    color:#fff;
 }
 
 /* Nav */
@@ -138,8 +138,8 @@ a.nav_gamespage {
 
 li.nav_gamespage {
     margin: 1% 9%;
+    padding: 5px;
 }
-
 
 /* Buttons */
 .cta, .cta_read_more, .cta_input_footer, .cta_heart, .cta_gamespage, .cta_pay, .cta_login, .cta_input, .cta_discount, .cta_heart_gamespage, .cta_gamepage {
@@ -213,7 +213,7 @@ li.nav_gamespage {
 
 /* Home Page */
 .first_section_homepage {
-    background-image: url(../images/motocross-big.jpg);
+    background-image: url(../images/motorcross-medium.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: bottom;
@@ -251,7 +251,7 @@ li.nav_gamespage {
 
 /* Games Page */
 #top_section_games_page {
-    background-image: url(../images/bluecar.jpg);
+    background-image: url(../images/bluecar-medium.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
@@ -263,7 +263,6 @@ li.nav_gamespage {
 
 .nav_gamespage{
     display: inline-block;
-    align-items: center;
 }
 
 .container_games_page, .row1, .row2, .row3, .game, .buttons_gamespage {
