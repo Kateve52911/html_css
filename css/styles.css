@@ -31,13 +31,13 @@ header {
     display: inline-grid;
     margin: 3%;
     font-size: small;
+    padding-top: 2%;
 }
 
 .newsletter {
     font-size: small;
-    font-family: Palatino, Verdana, sans-serif;  
     text-decoration: none;
-    font-size: small;
+    padding-top: 6%;
 }
 
 input.input_newsletter {
@@ -62,7 +62,7 @@ h1, h2, h3 {
     font-family: Tahoma, Verdana, sans-serif;
 }
 
-p, #first_section_text, input, textarea, label, input.cardholder, #contact-info  {
+p, #first_section_text, input, textarea, label, input.cardholder, #contact-info, .newsletter  {
     font-family: Palatino, Verdana, sans-serif;
 }
 
