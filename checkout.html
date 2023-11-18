@@ -29,15 +29,15 @@
         </header>
         <main>
             <Section class="h1heading">
-                <h1>Checkout / Cart</h1>
+                <h1>Checkout</h1>
             </Section>
 
             <Section class="checkout_container">
                 <Section class="checkout_forms checkout_containerthree">
-                    <section>
+                    <div>
                         <h2 class="payment_info_header">Payment Information:</h2>
                         <form action="POST">
-                                <Section class="payment_radio">
+                                <div class="payment_radio">
                                     <form action="">
                                         <label for="Payment_type">Card</label>
                                         <input type="radio" name="Paymentype" id="Payment_type">
@@ -45,10 +45,9 @@
                                         <input type="radio" name="Paymentype" id="Payment_type">
                                         <label for="Payment_type">Vipps</label>
                                         <input type="radio" name="Paymentype" id="Payment_type">
-                                    </form>
-                                        
-                                </Section>
-                                <section class="payment_info">
+                                    </form>    
+                                </div>
+                                <div class="payment_info">
                                 <form action="checkout_sucess.html">
                                         <input type="text" name="Cardholder_name" class="checkout_page" placeholder="Cardholders name">
                                         <input type="text" name="Card_number"  class="checkout_page" placeholder="Card number">
@@ -56,12 +55,12 @@
                                         <input type="text" name="expirationCVC"   class="checkout_page" placeholder="CVC">
                                         <input type="submit" value="Pay" class="cta_login">
                                 </form>
-                                </section>    
+                            </div>    
                         </form>
-                    </section>
+                    </div>
                 </Section>
 
-                <section class="customer_details checkout_containerone">
+                <div class="customer_details checkout_containerone">
                     <p class="header_customer_detail">Contact</p>
                     <p>olanormann@gmail.com</p>
 
@@ -77,10 +76,10 @@
                     <p class="header_customer_detail">Shipping medthod</p>
                     <p>Download</p>
 
-                </section>
+                </div>
 
 
-                <Section class="checkout_summary checkout_containertwo">
+                <div class="checkout_summary checkout_containertwo">
                     <h3>YOUR CART</h3>
                     <section class="details_checkout">
                         <section>
@@ -131,7 +130,7 @@
                             <p class="checkout_text">$ 54.98</p>
                         </section>
                     </section>
-            </section>
+                </div>
     
             </Section>
 
