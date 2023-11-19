@@ -315,7 +315,8 @@ a.cta_input_contactpage {
 }
 
 .buttons_gamespage {
-    gap: 3%;
+    padding-right: 5%;
+    gap: 2%;
     flex-direction: row;
 }
 
@@ -474,7 +475,7 @@ input.contact_input, textarea.contact_input, label.contact_page {
 }
 
 .payment_radio {
-    margin: 3% 0%;
+    margin: 3% 4%;
 }
 
 .payment_info_header {
@@ -497,6 +498,7 @@ input.cardholder {
 }
 
 input.discount_input {
+    margin: 1% 1% 7% 9%;
     display: inline;
     padding: 10px;
 }
@@ -516,6 +518,10 @@ input.discount_input {
 .price_details_checkout{
     padding-right: 30%;
     padding-top: 35%;
+}
+
+label.radio_checkout {
+    margin-right: 1%;
 }
 
 input.radio_checkout {
@@ -595,9 +601,8 @@ input.radio_checkout {
     }
 
     nav.links_topbar_gamespage {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0% 2%;
+        display: inline-flex;
+        padding: 0% 27%;
         margin-right: 2%;
     }
 
@@ -637,11 +642,11 @@ input.radio_checkout {
     }
 
     /* Fonts */
-    .newsletter, .contact_text_footer, nav.footer_social {
+    .newsletter, .contact_text_footer, nav.footer_social{
         font-size: xx-small; 
     }
 
-    a.nav_gamespage, .container_direct_contact, nav.links_topbar_gamespage   {
+    a.nav_gamespage, .container_direct_contact, nav.links_topbar_gamespage, .order_summary     {
         font-size: small;
     }
 
@@ -666,10 +671,6 @@ input.radio_checkout {
         display: flex;
     }
 
-    .footer_social {
-        margin-left: 4%;
-    }
-
     .newsletter, .contact_text_footer, nav.footer_social {
         padding: 0% 4%;
     }
@@ -677,7 +678,7 @@ input.radio_checkout {
     input.input_newsletter {
         padding: 2% 3%;
         margin: 0% 4%;
-        width: 200px;
+        width: 180px;
     }
 
      /* Games Page */
@@ -691,7 +692,7 @@ input.radio_checkout {
     }
 
     .container_games_page {
-        margin-top: 36%;
+        margin-top: 70%;
     }
     .row1, .row2, .row3 {
         align-content: baseline;
@@ -751,6 +752,16 @@ input.radio_checkout {
         flex-direction: column-reverse;
     }
 
+    input.discount_input {
+        margin: 0% 0% 3% 6% ;
+        padding: 8px;
+        width: 50%;
+    }
+
+    .cta_discount {
+        padding: 10px ;
+    }
+
     /* Racing */
     .container_gamepage {
         display: inline-grid;
@@ -795,6 +806,7 @@ input.radio_checkout {
     /* About */
     .container_about {
         grid-template-rows: repeat(2, 1fr);
+        margin: 0%;
     }
 }
 
