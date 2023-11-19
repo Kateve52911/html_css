@@ -54,11 +54,11 @@ input.input_newsletter {
 }
 
 /* Topbar */
-.topbar_gamespage, .topbar_homepage, .topbar_contactpage, .topbar_about, .top_text {
+.topbar_gamespage, .topbar_homepage, .topbar_contactpage, .topbar_about, .h1heading {
     background-color: var(--pale_blue);
 }
 
-.topbar_homepage, .topbar_contactpage, .topbar_about, .top_text {
+.topbar_homepage, .topbar_contactpage, .topbar_about, .h1heading {
     padding: 10px;
 }
 
@@ -275,8 +275,7 @@ a.cta_input_contactpage {
 }   
 
 .top_text {
-    margin: 0%;
-    padding: 2% 5%;
+    padding-left: 5%;
 }
 
 /* Games Page */
