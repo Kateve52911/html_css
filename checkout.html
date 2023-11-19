@@ -42,12 +42,12 @@
                         <form action="POST">
                                 <div class="payment_radio">
                                     <form action="">
-                                        <label for="Payment_type">Card</label>
-                                        <input type="radio" name="Paymentype" id="Payment_type">
-                                        <label for="Payment_type">Paypal</label>
-                                        <input type="radio" name="Paymentype" id="Payment_type">
-                                        <label for="Payment_type">Vipps</label>
-                                        <input type="radio" name="Paymentype" id="Payment_type">
+                                        <label for="Payment_type" class="radio_checkout" >Card</label>
+                                        <input type="radio" name="Paymentype" id="Payment_type" class="radio_checkout">
+                                        <label for="Payment_type" class="radio_checkout">Paypal</label>
+                                        <input type="radio" name="Paymentype" id="Payment_type" class="radio_checkout">
+                                        <label for="Payment_type" class="radio_checkout">Vipps</label>
+                                        <input type="radio" name="Paymentype" id="Payment_type" class="radio_checkout">
                                     </form>    
                                 </div>
                                 <div class="payment_info">
@@ -102,7 +102,7 @@
                     <section class="discount_container">
                         <form action="POST">
                             <input class="discount_input" type="text" name="discountcode" placeholder="Enter discount code">
-                            <input type="submit" value="Apply" class="cta_discount discount_input">
+                            <a href="checkout_sucess.html" class="cta_discount discount_input">Apply</a>
                         </form>
                     </section>
 
@@ -170,7 +170,7 @@
                 <section class="newsletter">
                     <form action="POST">
                         <input type="email" name="newsletter" id="newsletter" placeholder="Join our newsletter!" class="input_newsletter">
-                        <input type="submit" value="Submit" class="cta_input_footer input_newsletter">
+                        <a href="contact.html" class="cta_input_footer">Submit</a>
                     </form>
                 </section>
 
