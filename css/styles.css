@@ -117,7 +117,7 @@ p, #first_section_text, input, textarea, label, input.cardholder, #contact-info,
     font-size: medium;
 }
 
-header, .icon_footer, .heart_icon_gamepage, nav a, .cta, .cta_read_more, .cta_input_footer, .cta_heart, .cta_gamespage, .cta_pay, .cta_login, .cta_input, .cta_discount, .cta_heart_gamespage, .cta_gamepage, #first_section_text, footer {
+header, .icon_footer, .heart_icon_gamepage, nav a, .cta, .cta_read_more, .cta_input_footer, .cta_heart, .cta_gamespage, .cta_pay, .cta_login, .cta_input, .cta_discount, .cta_heart_gamespage, .cta_gamepage, #first_section_text, footer, .icon_user {
     color:var(--white);
 }
 
@@ -234,7 +234,7 @@ li.nav_gamespage {
     grid-template-columns:repeat(3, 1fr);
 } 
 
-.container_homepage, .form_contactpage, .checkout_container, .details_checkout, .container_grid_checkout, .checkout_total, .container_checkoutsucess, .container_about, .container_gamepage  {
+.container_homepage, .form_contactpage, .checkout_container,.container_grid_checkout, .checkout_total, .container_checkoutsucess, .container_about, .container_gamepage  {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -433,6 +433,7 @@ input, textarea, label {
 .details_checkout {
     align-items: start;
     padding: 1% 0%;
+    gap: 1%;
 }
 
 .container_grid_checkout, .checkout_total {
@@ -499,12 +500,17 @@ input.discount_input {
     padding: 3% 2% 0%;
 }
 
-.price_checkout {
+.price_checkout, .price_details_checkout {
     text-align: end;
 }
 
 .checkout_text, .checkout_text_top {
     padding: 4% 0%;
+}
+
+.price_details_checkout{
+    padding-right: 30%;
+    padding-top: 35%;
 }
 
 /*Checkout Sucess */
